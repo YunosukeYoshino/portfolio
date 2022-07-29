@@ -67,9 +67,9 @@ export default {
     '@nuxtjs/google-fonts' //追加
   ],
   googleFonts: {
-    families: {
-      Lato: [100, 400, 700] //読み込みたいGoogle　Fontsを指定
-    }
+    // families: {
+    //   Lato: [100, 200, 300, 400, 700] //読み込みたいGoogle　Fontsを指定
+    // }
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -77,7 +77,7 @@ export default {
   ],
   webfontloader: {
     google: {
-      families: ['Lato:100,300']
+      families: ['Lato:100,200,300']
     }
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
