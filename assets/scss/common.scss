@@ -53,7 +53,7 @@ $main_color: #ffffff;
             font-weight: 400;
             letter-spacing: 1.4px;
             padding-bottom: 10px;
-            font-weight: bold;
+            font-weight: 400;
             .nuxt-link-exact-active.nuxt-link-active {
                 position: relative;
                 &::after {
@@ -89,7 +89,7 @@ main {
     color: $main_color;
 }
 .about {
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .portFolio {
