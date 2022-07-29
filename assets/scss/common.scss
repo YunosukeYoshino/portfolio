@@ -1,0 +1,117 @@
+body {
+    font-family: "Lato", "Noto Serif JP";
+    font-weight: 100;
+    font-size: 14px;
+    overflow: hidden;
+    height: 100%;
+    letter-spacing: 1.2px;
+    width: 100%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    transition: 0.4s all;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+#bird {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+$main_color: #ffffff;
+.container {
+    border: 1px solid $main_color;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 40px;
+
+    h1 {
+        color: $main_color;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        color: $main_color;
+        margin-bottom: 40px;
+    }
+    header {
+        max-width: 200px;
+    }
+    .nav {
+        &__item {
+            color: $main_color;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1.4px;
+            padding-bottom: 10px;
+            font-weight: bold;
+            .nuxt-link-exact-active.nuxt-link-active {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.3rem;
+                    background-color: #ffffff;
+                    height: 1px;
+                    width: 0%;
+                    content: "";
+                    animation: Fadein 0.5s ease 0s forwards;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    &__main {
+        position: absolute;
+        bottom: 40px;
+        padding-left: 40px;
+        right: 40px;
+    }
+}
+
+main {
+    display: flex;
+}
+.contact {
+    color: $main_color;
+}
+.about {
+    font-weight: bold;
+}
+
+.portFolio {
+    color: #ffffff52;
+    font-size: clamp(20px, 10.5vw, 90px);
+    font-weight: 100;
+}
+.en {
+    color: $main_color;
+}
+.ja {
+    color: #d8ede0;
+}
+
+@keyframes Fadein {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
