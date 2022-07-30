@@ -43,6 +43,9 @@ export default {
         {
           src: 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js',
         },
+        {
+          src: 'height.js',
+        },
       ],
     }
   },
