@@ -1,5 +1,5 @@
 <template>
-  <div id="bird">
+  <div id="three">
     <div class="container">
       <h1>Yunosuke Yoshino</h1>
       <p class="subtitle">FrontEnd-Developer</p>
@@ -17,7 +17,7 @@
 export default {
   mounted() {
     VANTA.TOPOLOGY({
-      el: '#bird',
+      el: '#three',
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
@@ -28,6 +28,13 @@ export default {
       color: 0x2ede99,
       backgroundColor: 0x66e30,
     })
+  },
+  head() {
+    return {
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      ],
+    }
   },
 }
 </script>

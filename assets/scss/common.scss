@@ -19,7 +19,7 @@ a {
         opacity: 0.5;
     }
 }
-#bird {
+#three {
     display: flex;
     align-items: center;
     width: 100vw;
@@ -37,6 +37,8 @@ $main_color: #ffffff;
     h1 {
         color: $main_color;
         font-size: 30px;
+        font-size: clamp(20px, 5vw, 30px);
+        font-weight: 300;
         margin-bottom: 10px;
     }
     .subtitle {
@@ -87,14 +89,16 @@ main {
 }
 .contact {
     color: $main_color;
+    font-size: clamp(30px, 2.5vw, 40px);
+    font-weight: 100;
 }
 .about {
     font-weight: 400;
 }
 
 .portFolio {
-    color: #ffffff52;
-    font-size: clamp(20px, 10.5vw, 90px);
+    color: $main_color;
+    font-size: clamp(20px, 7.5vw, 90px);
     font-weight: 100;
 }
 .en {
