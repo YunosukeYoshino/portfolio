@@ -1,7 +1,8 @@
 <template>
   <div class="about">
     <p class="about__text en">
-      Yunosuke Yoshino - FrontEnd-Developer
+      Yunosuke Yoshino<br class="sm:hidden" />
+      - FrontEnd-Developer
       <br />
       Born in Hiroshima in 1995.
       <br />
