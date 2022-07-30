@@ -20,19 +20,20 @@ a {
     }
 }
 #three {
-    display: flex;
-    align-items: center;
     width: 100vw;
     height: 100vh;
     margin: auto;
 }
 $main_color: #ffffff;
-.container {
+.l-container {
     border: 1px solid $main_color;
-    width: 90%;
-    height: 90%;
-    margin: 0 auto;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
     padding: 40px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
 
     h1 {
         color: $main_color;

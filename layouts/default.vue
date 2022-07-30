@@ -1,6 +1,6 @@
 <template>
   <div id="three">
-    <div class="container">
+    <div class="l-container">
       <h1>Yunosuke Yoshino</h1>
       <p class="subtitle">FrontEnd-Developer</p>
       <div class="content">
