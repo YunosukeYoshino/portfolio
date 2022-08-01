@@ -46,6 +46,12 @@ export default {
         {
           src: 'height.js',
         },
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-7C1W0FTJR6'
+        },
+        {
+          src: 'gtag.js',
+        },
       ],
     }
   },
@@ -64,7 +70,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts' //追加
+    '@nuxtjs/google-fonts',//追加
   ],
   googleFonts: {
     // families: {
@@ -73,7 +79,9 @@ export default {
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+
+
   ],
   webfontloader: {
     google: {
